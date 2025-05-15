@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+    <link rel="icon" href="./static/img/main-logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../static/bootStrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    
+</head>
+<body>
+    <!-- Navbar head  -->
+
+
+    <!--NavBar starts -////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="container ">
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top  mr-0 pr-0 z-1000" id="nav-padding">
+            <a class="navbar-brand" href="#"><img src="./static/img/main-logo.png" class="logo"/></a>
+          
+            <button class="navbar-toggler" type="button" id="hamberger" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto mr-5 ">
+                
+                <li class="nav-item" id="nav2">
+                    <a class="nav-link" id="nav2" href="#home-section">Home</a>
+                  </li>
+                <li class="nav-item" id="nav2">
+                  <a class="nav-link" id="nav2" href="#about-section">About</a>
+                </li>
+                <li class="nav-item" id="nav2">
+                    <a class="nav-link" id="nav2" href="#model-section">Model</a>
+                  </li>
+                  <li class="nav-item" id="nav2">
+                    <a class="nav-link" id="nav2" href="#tech-section">Technologies</a>
+                  </li>
+                  <li class="nav-item" id="nav2">
+                    <a class="nav-link" id="nav2" href="#contact-section">Contact</a>
+                  </li>
+                
+              </ul>
+              
+    
+            
+          </nav>
+        </div>
+        </div>
+    <!--NavBar ends \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+  
+
+
+    <!--home section-->
+    <section class="home-div " id="home-section" style="height: 100vh ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 mod-middle">
+                    <h1 class="small-text">Hello Human World !!!</h1>
+                    <p class="head">Don't Ask, Just Show</p>
+                    <p class="small-para">
+                        Discover the power of object detection with us! Our website offers easy-to-use tools for identifying and locating objects in images and videos. Whether you're a developer or enthusiast, our models provide accurate results to enhance your projects. Join us in simplifying object detection for everyone.</p>
+                    <!-- <div class="btn-div">
+                        <a class="button"  style="text-decoration: none; color: white; font-size: medium;">view model</a>
+                    </div> -->
+                    <a id="model" href="/model">explore</a>
+                </div>
+
+                <div class="col-md-6 mob-hide">
+                    <img src="https://irp.cdn-website.com/25ff776b/dms3rep/multi/0c338ef522a8759f5f0ba34822e70d78.gif" class="home-img"/>
+                    <!-- <img src="https://blog.xmartlabs.com/images/body-detection-with-computer-vision/object-tracking.gif" class="home-img"/> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Live in the future-->
+    <section class="live-div" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="../static/img/allsteps.png" class="live-img-main"/>
+                </div>
+
+                <div class="col-12 col-md-6 live-text-cont">
+                    <h1 class="head2">All in Simple Steps</h1>
+
+                    <div class="live-card">
+                        <div class="live-card-sub">
+                            <div class="live-sm-bg">
+                                <img class="live-img-sm" src="./static/img/hand-index-thumb-fill.svg"/>
+                            </div>
+                            <h1 class="head3">Preprocessing The Data
+                            </h1>
+                        </div>
+                        <p class="small-para2">Initially, the input image or video frame undergoes preprocessing to standardize it for analysis. This often involves resizing, normalization, and possibly augmentation to enhance the model's ability to detect objects under various conditions.</p>
+                    </div>
+
+                    <div class="live-card">
+                        <div class="live-card-sub">
+                            <div class="live-sm-bg">
+                                <img class="live-img-sm" src="./static/img/alarm-fill.svg "/>
+                            </div>                           
+                             <h1 class="head3">Feature Extraction (Time consuming)</h1>
+                        </div>
+                        <p class="small-para2">The preprocessed image is then passed through a deep neural network, such as a convolutional neural network (CNN). This network extracts features from the image at multiple levels of abstraction, learning to recognize patterns and shapes that correspond to different objects.</p>
+                    </div>
+
+                    <div class="live-card">
+                        <div class="live-card-sub">
+
+                            <div class="live-sm-bg">
+                                <img class="live-img-sm" src="./static/img/telephone-fill.svg"/>
+                            </div>         
+                             <h1 class="head3">Detection and Localization</h1>
+                        </div>
+                        <p class="small-para2">The extracted features are used to identify regions of interest (ROIs) in the image where objects may be present. These ROIs are then analyzed to classify the objects they contain and refine their precise locations within the image. Techniques such as bounding box regression and non-maximum suppression are commonly employed to improve the accuracy of object localization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Items section------------------------------------------------------------ -->
+
+    <section class="items-div">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3 items-card">
+                    <img class="items-img" src="./static/img/yolo-image.png"/>
+                    <h1 class="head3 head4">YOLO ALGORITHM</h1>
+                    <p class="small-para3"> A real-time object detection algorithm that divides an image into grids and predicts bounding boxes and class probabilities simultaneously, making it fast.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3  items-card">
+                    <img class="items-img" src="./static/img/cnn-image.png"/>
+                    <h1 class="head3 head4">CONVOLUTIONAL NN</h1>
+                    <p class="small-para3">A DL model specifically designed for processing grid-like data, like images. They use convolutional layers to automatically learn hierarchical patterns and features from input data.</p>
+                </div>
+            
+                <div class="col-12 col-md-6 col-lg-3  items-card">
+                    <img class="items-img" src="./static/img/audio-image.png"/>
+                    <h1 class="head3 head4">TEXT-TO-AUDIO</h1>
+                    <p class="small-para3">Use Python's pyttsx3 library to convert text to speech. Initialize the engine, set properties like speed and volume, then use say() to convert text to audio.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3  items-card">
+                    <img class="items-img" src="./static/img/prediction-image.png"/>
+                    <h1 class="head3 head4">PREDICTION</h1>
+                    <p class="small-para3">To predict with YOLO model in Python: Load model, preprocess image, run inference, parse detections, and display results. Example: yolo.predict(image) .</p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!--- Calculations sections-->
+
+    <section class="calculations-div" id="stats-section" >
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-6 cal-text-cont">
+                    <h1 class="head2">Our statistics</h1>
+
+                    <div class="cal-card">
+                        <h1 class="count">104</h1>
+                        <p class="head3 head5">Our Taken for Training</p>
+
+                    </div>
+
+                    <div class="cal-card">
+                            <h1 class="count">9.0</h1>
+                             <p class="head3 head5">No. of approxies</p>
+                       </div>
+
+                    <div class="cal-card">
+                            <h1 class="count">92%</h1>
+                             <p class="head3 head5">Precision</p>
+                        </div>
+                </div>
+
+                <div class="col-md-6 card-cal">
+                    <img src="./static/img/cal1.gif" class="cal-img-main mob-none2"/>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------Workflow section-->
+
+    <section class="work-div" id="model-section">
+        <div class="container">
+            <div class="row">
+                <hr class="lines" />
+
+                <div class="col-12 col-md-6">
+                    <img src="./static/img/workflow3-removebg-preview.png" class="live-img-main"/>
+                </div>
+
+                
+
+                <div class="col-12 col-md-6 work-text-cont">
+                    <h1 class="head2 he">FINAL MODEL</h1>
+
+                    <div class="live-card space ">
+                        <div class="live-card-sub ">
+                            <div class="live-sm-bg hi">
+                                <img class="live-img-sm" src="./static/img/hand-index-thumb-fill.svg"/>
+                            </div>
+                            <h1 class="head3 head6">TITLE : <span class="span">Audio enabled Object-Detection in react time video streams.</span>
+                            </h1>
+                        </div>
+                        <p class="small-para2 pa">Audio-enabled object detection in real-time video streams integrates speech recognition with computer vision to verbally identify objects detected in the video, enhancing accessibility and usability for visually impaired users. The system processes video frames, identifies objects using computer vision algorithms like YOLO, and converts these findings into spoken text, aiding in immediate comprehension of the video content.
+                        </p>
+                        <p class="small-para2 pa">Can view the demo of this model by clicking on the below button.
+                        </p>
+                        <div class="btn-div middle">
+                            <a id="model" href="/model">view Demo</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  
+
+    <!------Customers reaction-->
+
+    <section class="customer-div" id="tech-section" >
+        <h1 class="head he hee">Techoloies used in this Project !!!</h1>
+        <p class="small-para2 pa paa">multiple libraries are used for building this project.</p>
+
+
+        
+        <div class="container ">
+            <div class=" rowss row ">
+                    
+                <div class="col-12 col-md-6 col-lg-3 cus-card">
+                    <img src="./static/img/pyn.png" class="customer-img"/>
+                    <h1 class="head3 head4">Python - programming language</h1>
+                    <p class="small-para2 pa paaa">“Python, a versatile programming language, is instrumental in Deep Learning (DL) and OpenCV projects due to its simplicity and extensive libraries. DL projects utilize Python's libraries like TensorFlow and PyTorch for building neural networks, while OpenCV projects leverage Python for image processing tasks.”</p>
+                    
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 cus-card">
+                    <img src="./static/img/django-image.png" class="customer-img"/>
+                    <h1 class="head3 head4">Django - Python web framework</h1>
+                    <p class="small-para2 pa paaa">“Django is a high-level Python web framework that facilitates rapid development of secure and maintainable websites and web applications. It follows the Model-View-Template (MVT) architectural pattern, which is similar to Model-View-Controller (MVC) but with slight differences.
+
+                    </div>
+
+                <div class="col-12 col-md-6 col-lg-3 cus-card">
+                    <img src="./static/img/deepLearning.png" class="customer-img"/>
+                    <h1 class="head3 head4">Deep Learning - An (AI) that teaches computers to process data</h1>
+                    <p class="small-para2 pa paaa">“
+                        Deep learning is a subset of ML that deals with algorithms inspired by the structure and function of the brain's neural networks. It has revolutionized (AI) by enabling machines to learn directly from data and make complex decisions without explicit programming.”</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 cus-card">
+                   
+                    <img src="./static/img/htmlCss-image.png" class="customer-img"/>
+                    <h1 class="head3 head4">HTML is a markup language & CSS is a style sheet language.</h1>
+                    <p class="small-para2 pa paaa">“HTML structures web content with elements like headings, paragraphs, and images. CSS (Cascading Style Sheets) styles HTML elements with properties like colors, fonts, and layout, enhancing the presentation and appearance of web pages.”</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer section-->
+  
+    <section class="footer-div" id="contact-section">
+        
+                
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <div class="text-center">
+                          <p class="footer-para">Object Detection</p>
+                          <div class="d-flex flex-row justify-content-center">
+                              <div class="bg-container2 ml-2 mt-4 p-1">
+                                  <i class="fab fa-google icon"></i>
+                              </div>
+                              <div class="bg-container2 ml-2 mt-4 p-1">
+                                  <i class="fab fa-twitter icon"></i>
+                              </div>
+                              <div class="bg-container2 ml-2 mt-4 p-1">
+                                  <i class="fab fa-instagram icon"></i>
+                              </div>
+                              <div class="bg-container2 ml-2 mt-4 p-1">
+                                  <i class="fa fa-linkedin-square icon"></i>
+                              </div>
+                          </div>
+                          <h1 class="pt-4 pb-4" style="color:white; font-size: 20px;">37,Aditya College of Engineering, AP,India.</h1>
+                      </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                      <p class="paragraph pt-5" style="color:white">Get to Know us</p>
+                      <ul class="unlist">
+                          <li class="list" style="color:white">About Us</li>
+                          <li class="list" style="color:white">Carrer</li>
+                          <li class="list" style="color:white">Press Releases</li>
+                          <li class="list" style="color:white">Gift a Smile</li>
+                      </ul>
+                  </div>
+                  <div class="col-6 col-lg-3 mob-view-hide">
+                      <p class="paragraph pt-5" style="color:white">Contact with us</p>
+                      <ul class="unlist">
+                          <li class="list" style="color:white">Facebook</li>
+                          <li class="list" style="color:white">Twitter</li>
+                          <li class="list" style="color:white">Instagram</li>
+                      </ul>
+        
+                  </div>
+                  <div class="col-6 col-lg-3">
+                      <p class="paragraph pt-5" style="color:white">Let Us Help You</p>
+                      <ul class="unlist">
+                          <li class="list" style="color:white">100% Purchase</li>
+                          <li class="list" style="color:white">Protection</li>
+                          <li class="list" style="color:white">Your Account</li>
+                          <li class="list" style="color:white">Return Centre</li>
+                          <li class="list" style="color:white">Help</li>
+                      </ul>
+                  </div>
+                  <hr class="lines" style="background-color:white" />
+              </div>
+          </div>
+          
+          <div class="pt-3 text-center footer-last">
+            <hr class="lines" style="background-color:white" />
+            <span class="heade pt-3">    Made with  	&#10084;  by team. | copyright </span>
+          
+              <i class="fa fa-copyright icon2" aria-hidden="true"></i><span class="heade pt-3"> 2023  </span>
+          </div>
+        </div>
+        
+        </section>
+</body>
+<script src="../static/js/nav.js">
+</script>
+</html>
